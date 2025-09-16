@@ -30,5 +30,9 @@
   </div>
 <?php endif; ?>
 
+<div class="rounded"> this div is rounded</div>
+<div class="image"> this div uses image</div>
+<div class="olti"> this div uses image </div>
+
 <?php get_footer(); ?>
 

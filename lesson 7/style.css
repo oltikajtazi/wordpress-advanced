@@ -27,3 +27,33 @@ h1 {
   margin: 2rem;
   font-weight: 700;
 }
+
+.rounded{
+  border: 15px;
+  border-radius: 12px;
+  background-color: navy;
+  text-align: center;
+  color: aquamarine;
+  
+}
+.image{
+  border-image-source: url(https://cdn.sanity.io/images/d075r9p6/production/9f962d813fefa600fa25e6e8843f30e13955818a-2400x1602.jpg?w=1200&h=630);
+  border-image-repeat: round ;
+  border-image-slice: 15;
+  border-radius: 12px;
+  border:20px solid transparent;
+
+}
+.olti {
+  background: 
+    linear-gradient(135deg, #1b345d 0%, aquamarine 100%),
+    url(https://cdn.sanity.io/images/d075r9p6/production/9f962d813fefa600fa25e6e8843f30e13955818a-2400x1602.jpg?w=1200&h=630) center/cover no-repeat;
+  border-radius: 12px;
+  min-height: 300px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-blend-mode: multiply;
+}
