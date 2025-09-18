@@ -34,5 +34,9 @@
 <div class="image"> this div uses image</div>
 <div class="olti"> this div uses image </div>
 
+<div class="shadow">this div has shadows</div>
+<div class="inershadow"> this div has shadows</div>
+
+
 <?php get_footer(); ?>
 

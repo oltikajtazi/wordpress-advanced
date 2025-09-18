@@ -57,3 +57,17 @@ h1 {
   color: #fff;
   background-blend-mode: multiply;
 }
+
+.shadow{
+  background: rgb(219, 44, 44);
+  padding: 20px;
+  margin: 20;
+  box-shadow:  10 10 20px purple;
+}
+
+.inershadow{
+  padding: 20px;
+  box-shadow:  0 0 10px blue;
+  background-color: rgb(54, 42, 165);
+  color: rgb(31, 0, 0);
+}
