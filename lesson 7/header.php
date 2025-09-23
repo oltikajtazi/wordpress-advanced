@@ -29,3 +29,4 @@ if ( is_front_page() ) {
     </div>
   </header>
   <main class="container">
+    <?php mytheme_pagination(); ?>

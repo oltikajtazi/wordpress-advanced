@@ -70,4 +70,29 @@ h1 {
   box-shadow:  0 0 10px blue;
   background-color: rgb(54, 42, 165);
   color: rgb(31, 0, 0);
+}.pagination-nav {
+  text-align: center;
+  margin: 2rem 0;
+}
+.pagination-nav ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.pagination-nav li {
+  display: inline;
+  margin: 0 5px;
+}
+.pagination-nav a, .pagination-nav span {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #f8f9fa;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #dee2e6;
+}
+.pagination-nav .current {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
 }

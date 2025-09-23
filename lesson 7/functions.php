@@ -115,3 +115,38 @@ class DS_Simple_Text_Widget extends WP_Widget {
 add_action( 'widgets_init', function() {
   register_widget( 'DS_Simple_Text_Widget' );
 } );
+
+function mytheme_pagination(
+  $query = null, $args = array()){
+
+
+    if($query  instanceof WP_Query){   
+      $q = $query;
+    } else {
+      global $wp_query;
+      $q = $wp_query;
+    }
+
+   if(empty($q->max_num_pages) || $q->max_num_pages < 2 ){
+    // Debug output for troubleshooting
+    echo '<!-- Pagination not shown: max_num_pages = ' . esc_html($q->max_num_pages) . ' -->';
+    return;
+   }
+
+   $big = 999999999; // need an unlikely integer
+   $pagination_args = wp_parse_args($args, array(
+      'base'      => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+      'format'    => '?paged=%#%',
+      'current'   => max(1, get_query_var('paged')),
+      'total'     => $q->max_num_pages,
+      'prev_text' => __('« Prev', 'dstheme'),
+      'next_text' => __('Next »', 'dstheme'),
+      'type'      => 'plain', // Change to 'plain' for simple numbered links
+   ));
+   echo '<nav class="pagination-nav">';
+   echo paginate_links($pagination_args);
+   echo '</nav>';
+  }
+
+?>
+
