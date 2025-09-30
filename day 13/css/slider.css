@@ -1,0 +1,113 @@
+/* Example slider stylesheet */
+.slider { width:100%; max-width:960px; margin:2rem auto; }
+.slider__track { display:flex; gap:1rem; overflow:auto; scroll-snap-type:x mandatory; }
+.slider__item { flex:0 0 80%; height:200px; background:#e9eef8; border-radius:12px; scroll-snap-align:center; }
+/* Movie Card Styles */
+.movie-card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  background: #fff;
+}
+.movie-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.movie-card .card-img-top {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  height: 220px;
+}
+.movie-card .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.movie-card .badge {
+  font-size: 0.95rem;
+  padding: 0.4em 0.8em;
+  border-radius: 0.7em;
+}
+.movie-card .card-text {
+  color: #444;
+  font-size: 1rem;
+}
+.add-movie-section {
+  background: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.add-movie-section h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.add-movie-section .form-label {
+  font-weight: 500;
+}
+.add-movie-section .btn-success {
+  font-weight: 600;
+  padding: 0.6em 2em;
+  border-radius: 0.7em;
+}
+/* Genre Filter */
+.genre-filter {
+  margin-bottom: 2rem;
+}
+.genre-filter label {
+  font-weight: 500;
+  margin-right: 0.5em;
+}
+.genre-filter select {
+  min-width: 140px;
+}
+/* Advanced Movie Card & Form Styles */
+.movie-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.movie-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+.movie-img-overlay {
+  position: relative;
+}
+.overlay-gradient {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 40%;
+  background: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+  border-radius: 0 0 1rem 1rem;
+}
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.badge.bg-primary {
+  background: linear-gradient(90deg,#007bff 60%,#0056b3 100%);
+  font-size: 0.85em;
+}
+.btn-outline-dark {
+  border-radius: 2rem;
+}
+.card-header {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+/* Advanced Form Styles */
+.card-body form {
+  gap: 1rem;
+}
+input, select, textarea {
+  border-radius: 0.5rem !important;
+}
+.btn-group .btn {
+  border-radius: 2rem;
+  margin-right: 0.25rem;
+}
+@media (max-width: 768px) {
+  .movie-card { margin-bottom: 1.5rem; }
+}

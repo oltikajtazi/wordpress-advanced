@@ -1,0 +1,98 @@
+/*
+Theme Name: DS Theme
+Theme URI: http://digitalschool.tech/
+Author: Donjete zogaj
+Author URI: http://digitalschool.tech/
+Description: DS is a theme for learning purposes.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dstheme
+Tags: Digital school, learing , wordpress
+*/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,
+    sans-serif;
+  margin: 0;
+}
+.site-footer {
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  background: #1b345d;
+}
+h1 {
+  margin: 2rem;
+  font-weight: 700;
+}
+
+.rounded{
+  border: 15px;
+  border-radius: 12px;
+  background-color: navy;
+  text-align: center;
+  color: aquamarine;
+  
+}
+.image{
+  border-image-source: url(https://cdn.sanity.io/images/d075r9p6/production/9f962d813fefa600fa25e6e8843f30e13955818a-2400x1602.jpg?w=1200&h=630);
+  border-image-repeat: round ;
+  border-image-slice: 15;
+  border-radius: 12px;
+  border:20px solid transparent;
+
+}
+.olti {
+  background: 
+    linear-gradient(135deg, #1b345d 0%, aquamarine 100%),
+    url(https://cdn.sanity.io/images/d075r9p6/production/9f962d813fefa600fa25e6e8843f30e13955818a-2400x1602.jpg?w=1200&h=630) center/cover no-repeat;
+  border-radius: 12px;
+  min-height: 300px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-blend-mode: multiply;
+}
+
+.shadow{
+  background: rgb(219, 44, 44);
+  padding: 20px;
+  margin: 20;
+  box-shadow:  10 10 20px purple;
+}
+
+.inershadow{
+  padding: 20px;
+  box-shadow:  0 0 10px blue;
+  background-color: rgb(54, 42, 165);
+  color: rgb(31, 0, 0);
+}.pagination-nav {
+  text-align: center;
+  margin: 2rem 0;
+}
+.pagination-nav ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.pagination-nav li {
+  display: inline;
+  margin: 0 5px;
+}
+.pagination-nav a, .pagination-nav span {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #f8f9fa;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #dee2e6;
+}
+.pagination-nav .current {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
